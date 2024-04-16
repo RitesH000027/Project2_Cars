@@ -1,6 +1,5 @@
 function getLastCar(inventory) {
-  const lastCar = inventory[inventory.length - 1];
-  return lastCar;
+  return inventory.reduce((lastCar, currentCar) => currentCar, null);
 }
 
 module.exports = getLastCar;
